@@ -14,18 +14,20 @@ a lot could have been better, but since it works just fine and does not get dete
 ## setup 
 to get setup, we're assuming you have a qemu/kvm gaming setup already
 
+#### build
+to prepare the web server dependencies and build the client in one step, run the root build script
+```
+./build.sh
+```
+
 #### web
-go into the web folder and run the following to get all packages required
+go into the web folder and start the server
 ```
-npm install express http socket.io cors path
-```
-then start the server
-```
-node server.js
+npm start
 ```
 
 #### client
-to build the client, run the build.sh script inside of client folder to download dependencies and build everything
+if you only want to build the client, run the build.sh script inside of client folder
 ```
 ./build.sh
 ```
